@@ -21,7 +21,7 @@ public enum Rank {
 		this.value = value;
 	}
 
-	protected int getValue() {
+	public int getValue() {
 		return value;
 	}
 	

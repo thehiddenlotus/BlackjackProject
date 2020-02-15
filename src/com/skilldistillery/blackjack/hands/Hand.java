@@ -1,6 +1,7 @@
 package com.skilldistillery.blackjack.hands;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 import com.skilldistillery.blackjack.cards.*;
 
 public abstract class Hand {
@@ -22,6 +23,10 @@ public abstract class Hand {
 	@Override
 	public String toString() {
 		return "Hand [cards=" + cards + "]";
+	}
+	
+	public List<Card> getHand(){
+		return cards;
 	}
 
 	public abstract int getHandValue();
