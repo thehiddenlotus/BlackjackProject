@@ -5,7 +5,7 @@ import com.skilldistillery.blackjack.hands.BlackjackHand;
 public class BlackjackPlayer extends Player {
 
 	public BlackjackPlayer() {
-		hand = new BlackjackHand();
+		setHand(new BlackjackHand());
 	}
 	
 	

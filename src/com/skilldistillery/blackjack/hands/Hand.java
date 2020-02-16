@@ -22,10 +22,14 @@ public abstract class Hand {
 	
 	@Override
 	public String toString() {
-		return "Hand [cards=" + cards + "]";
+		String hand ="";
+		for (Card card : cards) {
+			hand += "\n"+card.toString();
+		}
+		return hand;
 	}
 	
-	public List<Card> getHand(){
+	public List<Card> getCards(){
 		return cards;
 	}
 

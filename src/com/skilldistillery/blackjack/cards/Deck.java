@@ -33,6 +33,8 @@ public class Deck {
 	
 	public void shuffle() {
 		Collections.shuffle(deck);
-		System.out.println("Deck Shuffled");
+//		System.out.println("Deck Shuffled");
 	}
+	
+	
 }
