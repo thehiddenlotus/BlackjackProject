@@ -1,6 +1,7 @@
 package com.skilldistillery.blackjack.cards;
 
 public enum Rank {
+	ACE(1, "Ace"),
 	TWO(2, "Two"),
 	THREE(3, "Three"),
 	FOUR(4, "Four"),
@@ -12,8 +13,7 @@ public enum Rank {
 	TEN(10, "Ten"),
 	JACK(10, "Jack"),
 	QUEEN(10, "Queen"),
-	KING(10, "King"),
-	ACE(11, "Ace");
+	KING(10, "King");
 	
 	private int value;
 	private String name;

@@ -6,6 +6,11 @@ import com.skilldistillery.blackjack.hands.Hand;
 public abstract class Player {
 	
 	private Hand hand;
+	private Pot pot;
+	
+	public Player() {
+		pot = new Pot();
+	}
 	
 	public Hand getHand() {
 		return hand;
@@ -13,6 +18,25 @@ public abstract class Player {
 
 	public void setHand(Hand hand) {
 		this.hand = hand;
+	}
+	
+	public Pot getPot() {
+		return pot;
+	}
+	
+	public int setPot(int chips) {
+		this.pot.setChips(chips);
+		return pot.getChips();
+	}
+	
+	public int addChips(int chips) {
+		pot.addChips(chips);
+		return pot.getChips();
+	}
+
+	public int subChips(int chips) {
+		pot.subChips(chips);
+		return pot.getChips();
 	}
 	
 	public void displayHand() {

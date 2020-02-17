@@ -36,5 +36,9 @@ public class Deck {
 //		System.out.println("Deck Shuffled");
 	}
 	
-	
+	public void printDeck() {
+		for (Card card : deck) {
+			card.toString();
+		}
+	}
 }
